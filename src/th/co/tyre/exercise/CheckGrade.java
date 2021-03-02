@@ -4,28 +4,30 @@ public class CheckGrade {
 	
 	public static void main(String[] args) {
 		
-		int grade = 70;
+		int grade = 32;
+		String gradePoint = "";
 		
 		switch (grade) {
 		case 80:
-			System.out.println("เกรด A");
+			gradePoint = "เกรด A";
 			break;
 		case 70:
-			System.out.println("เกรด B");
+			gradePoint = "เกรด B";
 			break;
 		case 60:
-			System.out.println("เกรด C");
+			gradePoint = "เกรด C";
 			break;
 		case 50:
-			System.out.println("เกรด D");
+			gradePoint = "เกรด D";
 			break;
 		case 40:
-			System.out.println("เกรด F");
+			gradePoint = "เกรด F";
 			break;
 		default:
-			System.out.println("เกรด E");
+			gradePoint = "เกรด E";
 				
 		}
+		System.out.println(gradePoint);
 	}
 
 }
