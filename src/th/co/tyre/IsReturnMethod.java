@@ -21,6 +21,9 @@ public class IsReturnMethod {
 		// Call method
 		System.out.print("ยินดีต้อนรับ คุณ " + yourNameIs(inputName) + " ");
 		yourSurnameIs(inputSurname);
+		
+		yourName.close();
+		yourSurname.close();
 	}
 	
 	public static String yourNameIs(String name) {
