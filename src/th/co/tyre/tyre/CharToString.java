@@ -12,6 +12,12 @@ public class CharToString {
 		// Method 2
 		convertCharToStringTwo(charactors);
 		
+		// Method 3
+		System.out.println(toString(charactors));
+		
+		// Method 4
+		System.out.println(useStringBuilderClass(charactors));
+		
 	}
 	
 	// Method 1
@@ -28,5 +34,27 @@ public class CharToString {
 		
 		String str = String.copyValueOf(charactors, 0, charactors.length);
 		System.out.println(str);
+	}
+	
+	// Method 3
+	
+	public static String toString(char[] charactors) {
+		
+		String str = new String(charactors);
+		
+		return str;
+	}
+	
+	// Method 4
+	public static String useStringBuilderClass(char[] charactors) {
+		
+		StringBuilder stringBuilder = new StringBuilder();
+		
+		for (int i = 0; i < charactors.length; i++) {
+			stringBuilder.append(charactors[i]);
+		}
+		
+		
+		return stringBuilder.toString();
 	}
 }
